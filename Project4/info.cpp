@@ -13,7 +13,7 @@ int Info::GetId()
 
 void Info::SetName()
 {
-    cout << "name£º";
+    cout << "nameï¼š";
     cin >> name;
 }
 string Info::GetName() const
@@ -25,7 +25,7 @@ string Info::GetName() const
 
 void Info::SetTel()
 {
-    cout << "tel£º";
+    cout << "telï¼š";
     cin >> tel;
 }
 string Info::GetTel() const
@@ -37,7 +37,7 @@ string Info::GetTel() const
 
 void Info::SetAddr()
 {
-    cout << "address£º";
+    cout << "addressï¼š";
     cin >> addr;
 }
 string Info::GetAddr() const
@@ -85,7 +85,7 @@ loop:
     per.push_back(tmp);
 
 
-    cout << "continue to add contact? y/n £º";
+    cout << "continue to add contact? y/n ï¼š";
     char ch;
     cin >> ch;
     if ('y' == ch || 'Y' == ch)
@@ -108,9 +108,9 @@ void Info::show()
         for (it = per.begin(); it != per.end(); ++it)
         {
             cout << "ID: " << it->GetId() << endl;
-            cout << "name£º" << it->GetName() << endl;
-            cout << "TEL£º" << it->GetTel() << endl;
-            cout << "address£º" << it->GetAddr() << endl;
+            cout << "nameï¼š" << it->GetName() << endl;
+            cout << "TELï¼š" << it->GetTel() << endl;
+            cout << "addressï¼š" << it->GetAddr() << endl;
         }
         cout << "press any key to exit" << endl;
         char ch;
@@ -133,39 +133,39 @@ void Info::search()
         int num = 0; //serach id
         string tn; //search name
         int flag = 0; //search successfully or not
-        cout << "search method£º1.ID 2.name" << endl;
+        cout << "search methodï¼š1.ID 2.name" << endl;
         cin >> tp;
         if (1 == tp)
         {
-            cout << "please input the ID you want to search£º";
+            cout << "please input the ID you want to searchï¼š";
             cin >> num;
             for (it = per.begin(); it != per.end(); ++it)
             {
                 if (it->GetId() == num)
                 {
                     flag = 1;
-                    cout << "the person you want to search is£º" << endl;
+                    cout << "the person you want to search isï¼š" << endl;
                     cout << "ID: " << it->GetId() << endl;
-                    cout << "name£º" << it->GetName() << endl;
-                    cout << "TEL£º" << it->GetTel() << endl;
-                    cout << "address£º" << it->GetAddr() << endl;
+                    cout << "nameï¼š" << it->GetName() << endl;
+                    cout << "TELï¼š" << it->GetTel() << endl;
+                    cout << "addressï¼š" << it->GetAddr() << endl;
                 }
             }
         }
         else if (2 == tp)
         {
-            cout << "please input the name you want to search£º";
+            cout << "please input the name you want to searchï¼š";
             cin >> tn;
             for (it = per.begin(); it != per.end(); ++it)
             {
                 if (!((it->GetName()).compare(tn)))
                 {
                     flag = 1;
-                    cout << "the person you want to search is£º" << endl;
+                    cout << "the person you want to search isï¼š" << endl;
                     cout << "ID: " << it->GetId() << endl;
-                    cout << "name£º" << it->GetName() << endl;
-                    cout << "TEL£º" << it->GetTel() << endl;
-                    cout << "address£º" << it->GetAddr() << endl;
+                    cout << "nameï¼š" << it->GetName() << endl;
+                    cout << "TELï¼š" << it->GetTel() << endl;
+                    cout << "addressï¼š" << it->GetAddr() << endl;
                 }
             }
         }
@@ -206,24 +206,24 @@ void Info::delete_info()
         int num = 0; //id which is deleted
         string tn; //name which is deleted
         int flag = 0; //delete successfully or not
-        cout << "delete method£º1.ID 2.name" << endl;
+        cout << "delete methodï¼š1.ID 2.name" << endl;
         cin >> tp;
         if (1 == tp)
         {
-            cout << "please input the ID you want to delete£º";
+            cout << "please input the ID you want to deleteï¼š";
             cin >> num;
             for (it = per.begin(); it != per.end();)
             {
                 if (it->GetId() == num)
                 {
                     flag = 1;
-                    cout << "the person you want to delete is£º" << endl;
+                    cout << "the person you want to delete isï¼š" << endl;
                     cout << "ID: " << it->GetId() << endl;
-                    cout << "name£º" << it->GetName() << endl;
-                    cout << "TEL£º" << it->GetTel() << endl;
-                    cout << "address£º" << it->GetAddr() << endl;
+                    cout << "nameï¼š" << it->GetName() << endl;
+                    cout << "TELï¼š" << it->GetTel() << endl;
+                    cout << "addressï¼š" << it->GetAddr() << endl;
 
-                    cout << "are you sure£¿y/n : ";
+                    cout << "are you sureï¼Ÿy/n : ";
                     char ch1;
                     cin >> ch1;
                     if (ch1 == 'y' || ch1 == 'Y')
@@ -239,20 +239,20 @@ void Info::delete_info()
         }
         else if (2 == tp)
         {
-            cout << "please input the name you want to delete£º";
+            cout << "please input the name you want to deleteï¼š";
             cin >> tn;
             for (it = per.begin(); it != per.end(); )
             {
                 if (!((it->GetName()).compare(tn)))
                 {
                     flag = 1;
-                    cout << "the person you want to delete is£º" << endl;
+                    cout << "the person you want to delete isï¼š" << endl;
                     cout << "ID: " << it->GetId() << endl;
-                    cout << "name£º" << it->GetName() << endl;
-                    cout << "TEL£º" << it->GetTel() << endl;
-                    cout << "address£º" << it->GetAddr() << endl;
+                    cout << "nameï¼š" << it->GetName() << endl;
+                    cout << "TELï¼š" << it->GetTel() << endl;
+                    cout << "addressï¼š" << it->GetAddr() << endl;
 
-                    cout << "are you sure£¿y/n : ";
+                    cout << "are you sureï¼Ÿy/n : ";
                     char ch1;
                     cin >> ch1;
                     if (ch1 == 'y' || ch1 == 'Y')
@@ -292,73 +292,73 @@ void Info::modify()
     vector<Info>::iterator it;
     if (per.empty())
     {
-        cout << "invalid person£¡" << endl;
+        cout << "invalid personï¼" << endl;
     }
     else
     {
     modify_loop:
         string tn;
         int flag2 = 0;
-        int flag = 0; //ÐÞ¸Ä¶ÔÏó²éÕÒ³É¹¦Óë·ñ±êÖ¾Î»
-        cout << "please input the name you want to modify£º";
+        int flag = 0; 
+        cout << "please input the name you want to modifyï¼š";
         cin >> tn;
         for (it = per.begin(); it != per.end(); )
         {
             if (!((it->GetName()).compare(tn)))
             {
                 flag = 1;
-                cout << "the person you want to modify is£º" << endl;
+                cout << "the person you want to modify isï¼š" << endl;
                 cout << "ID: " << it->GetId() << endl;
-                cout << "name£º" << it->GetName() << endl;
-                cout << "TEL£º" << it->GetTel() << endl;
-                cout << "address£º" << it->GetAddr() << endl;
+                cout << "nameï¼š" << it->GetName() << endl;
+                cout << "TELï¼š" << it->GetTel() << endl;
+                cout << "addressï¼š" << it->GetAddr() << endl;
 
-                cout << "are you sure£¿y/n : ";
+                cout << "are you sureï¼Ÿy/n : ";
                 char ch1;
                 cin >> ch1;
                 char ch2;
                 if (ch1 == 'y' || ch1 == 'Y')
                 {
-                    cout << "which part do you want to modify?£º1.name 2.TEL 3.address£º";
+                    cout << "which part do you want to modify?ï¼š1.name 2.TEL 3.addressï¼š";
                     cin >> ch2;
                     switch (ch2)
                     {
                     case '1':
                     {
                         it->SetName();
-                        cout << "modify successfully£¡now the information is£º" << endl;
+                        cout << "modify successfullyï¼now the information isï¼š" << endl;
                         cout << "ID: " << it->GetId() << endl;
-                        cout << "name£º" << it->GetName() << endl;
-                        cout << "TEL£º" << it->GetTel() << endl;
-                        cout << "address£º" << it->GetAddr() << endl;
+                        cout << "nameï¼š" << it->GetName() << endl;
+                        cout << "TELï¼š" << it->GetTel() << endl;
+                        cout << "addressï¼š" << it->GetAddr() << endl;
                         flag2 = 1;
                         break;
                     }
                     case '2':
                     {
                         it->SetTel();
-                        cout << "modify successfully£¡now the information is£º" << endl;
+                        cout << "modify successfullyï¼now the information isï¼š" << endl;
                         cout << "ID: " << it->GetId() << endl;
-                        cout << "name£º" << it->GetName() << endl;
-                        cout << "TEL£º" << it->GetTel() << endl;
-                        cout << "address£º" << it->GetAddr() << endl;
+                        cout << "nameï¼š" << it->GetName() << endl;
+                        cout << "TELï¼š" << it->GetTel() << endl;
+                        cout << "addressï¼š" << it->GetAddr() << endl;
                         flag2 = 1;
                         break;
                     }
                     case '3':
                     {
                         it->SetAddr();
-                        cout << "modify successfully£¡now the information is£º" << endl;
+                        cout << "modify successfullyï¼now the information isï¼š" << endl;
                         cout << "ID: " << it->GetId() << endl;
-                        cout << "name£º" << it->GetName() << endl;
-                        cout << "TEL£º" << it->GetTel() << endl;
-                        cout << "address£º" << it->GetAddr() << endl;
+                        cout << "nameï¼š" << it->GetName() << endl;
+                        cout << "TELï¼š" << it->GetTel() << endl;
+                        cout << "addressï¼š" << it->GetAddr() << endl;
                         flag2 = 1;
                         break;
                     }
                     default:
                     {
-                        cout << "error£¡" << endl;
+                        cout << "errorï¼" << endl;
                         break;
                     }
                     }
@@ -392,7 +392,7 @@ void Info::modify()
 
 void Info::exit_info()
 {
-    cout << "are you sure£¿y/n: ";
+    cout << "are you sureï¼Ÿy/n: ";
     char ch1;
     cin >> ch1;
     if (ch1 == 'y' || ch1 == 'Y')
@@ -408,7 +408,7 @@ void Info::choose()
 {
     char action;
     Info tmp;
-    cout << "please input the function you want to use£º";
+    cout << "please input the function you want to useï¼š";
     cin >> action;
 
 
